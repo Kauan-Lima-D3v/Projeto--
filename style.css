@@ -193,4 +193,23 @@ body {
 .buy-link:hover {
     background: var(--gold);
     transform: translateY(0);
-    box-shadow: 0 5px 15px rgba(197, 160, 45, 0.4); }
+
+    box-shadow: 0 5px 15px rgba(197, 160, 45, 0.4); }   
+/* Ajustes para telas de celular */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem !important; /* Diminui o título principal */
+    }
+
+    .container-nav-flex {
+        flex-direction: column; /* Empilha os itens do menu se necessário */
+        gap: 15px;
+    }
+
+    /* Faz os botões ficarem um abaixo do outro no celular */
+    header .btn { 
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
